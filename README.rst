@@ -18,7 +18,7 @@ https://play.google.com/store/apps/details?id=com.flapg.ikawidget2&hl=ja
 
 Example of output (GUT area)
 
-.. figure:: C:\programing\splatoon_league_corr\readme\相関係数表1.jpg
+.. figure:: https://user-images.githubusercontent.com/62247164/95659914-5ae9c300-0b5f-11eb-8c16-6d0db9a90f2d.jpg
    :alt: 
 
 Dependencies
