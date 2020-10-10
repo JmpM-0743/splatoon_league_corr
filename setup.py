@@ -16,7 +16,7 @@ setup(
     long_description=readme,
     author='Maruyama Jumpei',
     author_email='jmp.mtywt.lv@gmail.com',
-    url='',
+    url='https://github.com/JmpM-0743/splatoon_league_corr.git',
     license=license,
 	install_requires = ['pandas','datetime','openpyxl'],
     packages=find_packages(exclude=('samples', 'docs'))
