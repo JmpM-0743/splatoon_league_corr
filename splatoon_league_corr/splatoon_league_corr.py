@@ -130,85 +130,85 @@ def calc_corr(filename,save_dir,myteam,mode,n,datemin,datemax):
 	df_league_out['myteam'] = df_league_out[myteam.friend1.usname]*df_league_out[myteam.friend2.usname]*df_league_out[myteam.friend3.usname]
 	df_league_out = df_league_out[df_league_out['myteam']==1]
 
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_Kill']=df_league['alpha1Kill']
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_Kill']=df_league['alpha1Kill']
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_Kill']=df_league['alpha1Kill']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_Kill']=df_league['alpha2Kill']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_Kill']=df_league['alpha2Kill']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_Kill']=df_league['alpha2Kill']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_Kill']=df_league['alpha3Kill']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_Kill']=df_league['alpha3Kill']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_Kill']=df_league['alpha3Kill']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_Kill']=df_league_out['alpha1Kill']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_Kill']=df_league_out['alpha1Kill']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_Kill']=df_league_out['alpha1Kill']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_Kill']=df_league_out['alpha2Kill']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_Kill']=df_league_out['alpha2Kill']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_Kill']=df_league_out['alpha2Kill']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_Kill']=df_league_out['alpha3Kill']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_Kill']=df_league_out['alpha3Kill']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_Kill']=df_league_out['alpha3Kill']
 
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_Death']=df_league['alpha1Death']
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_Death']=df_league['alpha1Death']
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_Death']=df_league['alpha1Death']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_Death']=df_league['alpha2Death']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_Death']=df_league['alpha2Death']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_Death']=df_league['alpha2Death']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_Death']=df_league['alpha3Death']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_Death']=df_league['alpha3Death']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_Death']=df_league['alpha3Death']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_Death']=df_league_out['alpha1Death']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_Death']=df_league_out['alpha1Death']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_Death']=df_league_out['alpha1Death']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_Death']=df_league_out['alpha2Death']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_Death']=df_league_out['alpha2Death']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_Death']=df_league_out['alpha2Death']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_Death']=df_league_out['alpha3Death']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_Death']=df_league_out['alpha3Death']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_Death']=df_league_out['alpha3Death']
 
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_KillPerDeath']=df_league['alpha1KillPerDeath']
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_KillPerDeath']=df_league['alpha1KillPerDeath']
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_KillPerDeath']=df_league['alpha1KillPerDeath']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_KillPerDeath']=df_league['alpha2KillPerDeath']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_KillPerDeath']=df_league['alpha2KillPerDeath']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_KillPerDeath']=df_league['alpha2KillPerDeath']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_KillPerDeath']=df_league['alpha3KillPerDeath']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_KillPerDeath']=df_league['alpha3KillPerDeath']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_KillPerDeath']=df_league['alpha3KillPerDeath']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_KillPerDeath']=df_league_out['alpha1KillPerDeath']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_KillPerDeath']=df_league_out['alpha1KillPerDeath']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_KillPerDeath']=df_league_out['alpha1KillPerDeath']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_KillPerDeath']=df_league_out['alpha2KillPerDeath']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_KillPerDeath']=df_league_out['alpha2KillPerDeath']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_KillPerDeath']=df_league_out['alpha2KillPerDeath']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_KillPerDeath']=df_league_out['alpha3KillPerDeath']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_KillPerDeath']=df_league_out['alpha3KillPerDeath']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_KillPerDeath']=df_league_out['alpha3KillPerDeath']
 
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_PaintPoint']=df_league['alpha1PaintPoint']
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_PaintPoint']=df_league['alpha1PaintPoint']
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_PaintPoint']=df_league['alpha1PaintPoint']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_PaintPoint']=df_league['alpha2PaintPoint']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_PaintPoint']=df_league['alpha2PaintPoint']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_PaintPoint']=df_league['alpha2PaintPoint']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_PaintPoint']=df_league['alpha3PaintPoint']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_PaintPoint']=df_league['alpha3PaintPoint']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_PaintPoint']=df_league['alpha3PaintPoint']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_PaintPoint']=df_league_out['alpha1PaintPoint']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_PaintPoint']=df_league_out['alpha1PaintPoint']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_PaintPoint']=df_league_out['alpha1PaintPoint']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_PaintPoint']=df_league_out['alpha2PaintPoint']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_PaintPoint']=df_league_out['alpha2PaintPoint']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_PaintPoint']=df_league_out['alpha2PaintPoint']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_PaintPoint']=df_league_out['alpha3PaintPoint']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_PaintPoint']=df_league_out['alpha3PaintPoint']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_PaintPoint']=df_league_out['alpha3PaintPoint']
 
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_Special']=df_league['alpha1Special']
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_Special']=df_league['alpha1Special']
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_Special']=df_league['alpha1Special']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_Special']=df_league['alpha2Special']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_Special']=df_league['alpha2Special']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_Special']=df_league['alpha2Special']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_Special']=df_league['alpha3Special']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_Special']=df_league['alpha3Special']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_Special']=df_league['alpha3Special']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_Special']=df_league_out['alpha1Special']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_Special']=df_league_out['alpha1Special']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_Special']=df_league_out['alpha1Special']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_Special']=df_league_out['alpha2Special']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_Special']=df_league_out['alpha2Special']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_Special']=df_league_out['alpha2Special']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_Special']=df_league_out['alpha3Special']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_Special']=df_league_out['alpha3Special']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_Special']=df_league_out['alpha3Special']
 
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_WeaponID']=df_league['alpha1WeaponID']
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_WeaponID']=df_league['alpha1WeaponID']
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_WeaponID']=df_league['alpha1WeaponID']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_WeaponID']=df_league['alpha2WeaponID']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_WeaponID']=df_league['alpha2WeaponID']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_WeaponID']=df_league['alpha2WeaponID']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_WeaponID']=df_league['alpha3WeaponID']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_WeaponID']=df_league['alpha3WeaponID']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_WeaponID']=df_league['alpha3WeaponID']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_WeaponID']=df_league_out['alpha1WeaponID']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_WeaponID']=df_league_out['alpha1WeaponID']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_WeaponID']=df_league_out['alpha1WeaponID']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_WeaponID']=df_league_out['alpha2WeaponID']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_WeaponID']=df_league_out['alpha2WeaponID']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_WeaponID']=df_league_out['alpha2WeaponID']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_WeaponID']=df_league_out['alpha3WeaponID']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_WeaponID']=df_league_out['alpha3WeaponID']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_WeaponID']=df_league_out['alpha3WeaponID']
 
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_PaintPointPerMin']=df_league['alpha1PaintPointPerMin']
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_PaintPointPerMin']=df_league['alpha1PaintPointPerMin']
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_PaintPointPerMin']=df_league['alpha1PaintPointPerMin']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_PaintPointPerMin']=df_league['alpha2PaintPointPerMin']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_PaintPointPerMin']=df_league['alpha2PaintPointPerMin']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_PaintPointPerMin']=df_league['alpha2PaintPointPerMin']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_PaintPointPerMin']=df_league['alpha3PaintPointPerMin']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_PaintPointPerMin']=df_league['alpha3PaintPointPerMin']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_PaintPointPerMin']=df_league['alpha3PaintPointPerMin']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_PaintPointPerMin']=df_league_out['alpha1PaintPointPerMin']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_PaintPointPerMin']=df_league_out['alpha1PaintPointPerMin']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_PaintPointPerMin']=df_league_out['alpha1PaintPointPerMin']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_PaintPointPerMin']=df_league_out['alpha2PaintPointPerMin']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_PaintPointPerMin']=df_league_out['alpha2PaintPointPerMin']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_PaintPointPerMin']=df_league_out['alpha2PaintPointPerMin']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_PaintPointPerMin']=df_league_out['alpha3PaintPointPerMin']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_PaintPointPerMin']=df_league_out['alpha3PaintPointPerMin']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_PaintPointPerMin']=df_league_out['alpha3PaintPointPerMin']
 
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_SpecialPerMin']=df_league['alpha1SpecialPerMin']
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_SpecialPerMin']=df_league['alpha1SpecialPerMin']
-	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_SpecialPerMin']=df_league['alpha1SpecialPerMin']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_SpecialPerMin']=df_league['alpha2SpecialPerMin']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_SpecialPerMin']=df_league['alpha2SpecialPerMin']
-	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_SpecialPerMin']=df_league['alpha2SpecialPerMin']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_SpecialPerMin']=df_league['alpha3SpecialPerMin']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_SpecialPerMin']=df_league['alpha3SpecialPerMin']
-	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_SpecialPerMin']=df_league['alpha3SpecialPerMin']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_SpecialPerMin']=df_league_out['alpha1SpecialPerMin']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_SpecialPerMin']=df_league_out['alpha1SpecialPerMin']
+	df_league_out.loc[df_league_out['alpha1PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_SpecialPerMin']=df_league_out['alpha1SpecialPerMin']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_SpecialPerMin']=df_league_out['alpha2SpecialPerMin']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_SpecialPerMin']=df_league_out['alpha2SpecialPerMin']
+	df_league_out.loc[df_league_out['alpha2PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_SpecialPerMin']=df_league_out['alpha2SpecialPerMin']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend1.pid,myteam.friend1.usname+'_SpecialPerMin']=df_league_out['alpha3SpecialPerMin']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend2.pid,myteam.friend2.usname+'_SpecialPerMin']=df_league_out['alpha3SpecialPerMin']
+	df_league_out.loc[df_league_out['alpha3PrincipalID']==' '+myteam.friend3.pid,myteam.friend3.usname+'_SpecialPerMin']=df_league_out['alpha3SpecialPerMin']
 
 	df_league_out[myteam.friend1.usname+'_KillPerMin'] = df_league_out[myteam.friend1.usname+'_Kill']/df['elapsedTime'].astype(int)*60
 	df_league_out[myteam.friend1.usname+'_DeathPerMin'] = df_league_out[myteam.friend1.usname+'_Death']/df['elapsedTime'].astype(int)*60
@@ -221,7 +221,28 @@ def calc_corr(filename,save_dir,myteam,mode,n,datemin,datemax):
 	df_league_out = df_league_out.drop("alpha1PrincipalID", axis=1)
 	df_league_out = df_league_out.drop("alpha2PrincipalID", axis=1)
 	df_league_out = df_league_out.drop("alpha3PrincipalID", axis=1)
-	
+	df_league_out = df_league_out.drop("alpha1Kill", axis=1)
+	df_league_out = df_league_out.drop("alpha2Kill", axis=1)
+	df_league_out = df_league_out.drop("alpha3Kill", axis=1)
+	df_league_out = df_league_out.drop("alpha1KillPerDeath", axis=1)
+	df_league_out = df_league_out.drop("alpha2KillPerDeath", axis=1)
+	df_league_out = df_league_out.drop("alpha3KillPerDeath", axis=1)
+	df_league_out = df_league_out.drop("alpha1PaintPoint", axis=1)
+	df_league_out = df_league_out.drop("alpha2PaintPoint", axis=1)
+	df_league_out = df_league_out.drop("alpha3PaintPoint", axis=1)
+	df_league_out = df_league_out.drop("alpha1Special", axis=1)
+	df_league_out = df_league_out.drop("alpha2Special", axis=1)
+	df_league_out = df_league_out.drop("alpha3Special", axis=1)
+	df_league_out = df_league_out.drop("alpha1WeaponID", axis=1)
+	df_league_out = df_league_out.drop("alpha2WeaponID", axis=1)
+	df_league_out = df_league_out.drop("alpha3WeaponID", axis=1)
+	df_league_out = df_league_out.drop("alpha1PaintPointPerMin", axis=1)
+	df_league_out = df_league_out.drop("alpha2PaintPointPerMin", axis=1)
+	df_league_out = df_league_out.drop("alpha3PaintPointPerMin", axis=1)
+	df_league_out = df_league_out.drop("alpha1SpecialPerMin", axis=1)
+	df_league_out = df_league_out.drop("alpha2SpecialPerMin", axis=1)
+	df_league_out = df_league_out.drop("alpha3SpecialPerMin", axis=1)
+		
 	df_league_out.loc[df_league_out['bravo1udemaeName']=='','bravo1udemaeName']=0
 	df_league_out.loc[df_league_out['bravo2udemaeName']=='','bravo2udemaeName']=0
 	df_league_out.loc[df_league_out['bravo3udemaeName']=='','bravo3udemaeName']=0

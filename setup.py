@@ -11,9 +11,10 @@ with open('LICENSE') as f:
 
 setup(
     name='splatoon_league_corr',
-    version='1.0.0',
+    version='1.0.1',
     description='Correlation Coefficient Table for Splatoon s League',
     long_description=readme,
+	long_description_content_type='text/x-rst',
     author='Maruyama Jumpei',
     author_email='jmp.mtywt.lv@gmail.com',
     url='https://github.com/JmpM-0743/splatoon_league_corr.git',
